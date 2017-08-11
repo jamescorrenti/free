@@ -1,0 +1,106 @@
+I am going to write some full sentences that I am hoping will be parsed. Did this work?
+I truly hope so! If not what am I to do? I would truly love that. Mike Jackson likes to eat at McDonalds.
+Abstract—Text summarization is a process that reduces the
+size of the text document and extracts significant sentences
+from a text document. We present a novel technique for text
+summarization. The originality of technique lies on
+exploiting local and global properties of words and
+identifying significant words. The local property of word
+can be considered as the sum of normalized term frequency
+multiplied by its weight and normalized number of
+sentences containing that word multiplied by its weight. If
+local score of a word is less than local score threshold, we
+remove that word. Global property can be thought of as
+maximum semantic similarity between a word and title
+words. Also we introduce an iterative algorithm to identify
+significant words. This algorithm converges to the fixed
+number of significant words after some iterations and the
+number of iterations strongly depends on the text document.
+We used a two-layered back propagation neural network
+with three neurons in the hidden layer to calculate weights.
+The results show that this technique has better performance
+than MS-word 2007, baseline and Gistsumm summarizers. As the amount of information grows rapidly, text
+summarization is getting more important. Text
+summarization is a tool to save time and to decide about
+reading a document or not. It is a very complicated task.
+It should manipulate a huge quantity of words and
+produce a cohesive summary. The main goal in text
+summarization is extracting the most important concept
+of text document. Two kinds of text summarization are:
+Extractive and Abstractive. Extractive method selects a
+subset of sentences that contain the main concept of text.
+In contrast, abstractive method derives main concept of
+text and builds the summarization based on Natural
+Language Processing. Our technique is based on
+extractive method. There are several techniques used for
+extractive method. Some researchers applied statistical
+criterions. Some of these criterions include TF/IDF (Term
+Frequency-Inverse Document Frequency), number of
+words occurring in title, and number of numerical
+data. Using these criterions does not produce a readerfriendly
+summary. As a result NLP (Natural Language
+Processing) and lexical cohesion are used to guarantee
+the cohesion of the summary. Lexical cohesion is the
+chains of related words in text that capture a part of the
+cohesive structure of the text. Semantic relations between
+words are used in lexical cohesion. Halliday and Hasan
+classified lexical cohesion into two categories: reiteration
+category and collocation category. Reiteration category
+considers repetition, synonym, and hyponyms, while
+collocation category deals with the co-occurrence
+between words in text document. In this article, we
+present a new technique which benefits of the advantages
+of both statistical and NLP techniques and reduces the
+number of words for Natural Language Processing. We
+use two statistical features: term frequency normalized by
+number of text words and number of sentences containing
+the word normalized by total number of text sentences.
+Also we use synonym, hyponymy, and meronymy
+relations in reiteration category to reflect the semantic
+similarity between text words and title words. A twolayered
+backpropation neural network is used to automate
+identification of weights of features. The rest of the
+article is organized as follow. Section 2 provides a review
+of previous works on text summarization systems.
+Section 3 presents our technique. Section 4 describes
+experimental results and evaluation. Finally we conclude
+and suggest future work in section 5. Automatic text summarization dates back to fifties. In
+1958, Luhn created text summarization system based
+on weighting sentences of a text. He used word frequency
+to specify topic of the text document. There are some
+methods that consider statistical criterions. Edmundson
+used Cue method (i.e. "introduction", "conclusion", and
+"result"), title method and location method for
+determining the weight of sentences. Statistical methods
+suffer from not considering the cohesion of text.
+Kupiec, Pederson, and Chen suggested a trainable
+method to summarize text document. In this method, number of votes collected by the sentence determines the
+probability of being included the sentence in the
+summary.
+Another method includes graph approach proposed by
+Kruengkrai and Jaruskululchi to determine text title
+and produce summary. Their approach takes advantages
+of both the local and global properties of sentences. They
+used clusters of significant words within each sentence to
+calculate the local property of sentence and relations of
+all sentences in document to determine global property of
+text document.
+Beside statistical methods, there are other approaches
+that consider semantic relations between words. These
+methods need linguistic knowledge. Chen, Wang, and
+Guan proposed an automated text summarization
+system based on lexical chain. Lexical chain is a series
+of interrelated words in a text. WordNet is a lexical
+database which includes relations between words such as
+synonym, hyponymy, meronymy, and some other
+relations.
+Svore, Vander Wende and Bures used machine
+learning algorithm to summarize text. Eslami,
+Khosravyan D., Kyoomarsi, and Khosravi proposed an
+approach based on Fuzzy Logic. Fuzzy Logic does
+not guarantee the cohesion of the summary of text.
+Halavati, Qazvinian, Sharif H. applied Genetic algorithm
+in text summarization system. Latent Semantic
+Analysis is another approach used in text
+summarization system. Abdel Fattha and Ren
+proposed a technique based on Regression to estimate text features weights.
