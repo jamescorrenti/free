@@ -1,16 +1,23 @@
-
 ## To Run:
 ```
 $ pip3 install -r requirements
-$ python3 preparsing.py
+$ python3 install.py
+$ sudo python3 summary.py
 ```
+Then browse to http://localhost
 
-## Dependencies
+## Python Dependencies
 * nltk
-* django
 
-## TODO:
-I need to add the ability to download necessary NLTK packages.
-* stopwords
+## Natural Language Tool Kit Dependencies:
 * punkt
-* nltk.download('averaged_perceptron_tagger')
+* stopwords
+* averaged_perception_tagger
+* wordnet
+
+## Known Issues:
+* I am not confident in how good nltk's noun parser is
+* strip off ( and )
+* This will not handle anything but txt files
+* Will have issues with files that have more than 1 period
+* I am not sure how large of a file can be added

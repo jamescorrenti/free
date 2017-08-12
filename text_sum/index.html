@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<h4>Text Summary</h4>
+
+<div id="main">
+    <form id="upload_form">
+      <div class="form-group">
+        <label for="enter">Select File</label>
+        <input type="file" class="form-control-file" id="file">
+      </div>
+      <label for="summary_ratio">Example select</label>
+        <select class="form-control" id="summary_ratio">
+          <option>0%</option>
+          <option>10%</option>
+          <option>20%</option>
+          <option>30%</option>
+          <option>40%</option>
+          <option>50%</option>
+          <option>60%</option>
+          <option>70%</option>
+          <option>80%</option>
+          <option>90%</option>
+          <option>100%</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Get Summary</button>
+    </form>
+
+    <br>
+
+    <ul class="nav nav-tabs" id="TabNav" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="summary-tab" data-toggle="tab" href="#summary" role="tab" aria-controls="home" aria-expanded="true">Summary</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="keywords-tab" data-toggle="tab" href="#keywords" role="tab" aria-controls="profile">Keywords</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" id="report-tab" data-toggle="tab" href="#report" role="button" aria-controls="report" aria-expanded="true">Report</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="TabContent">
+      <div class="tab-pane fade show active" id="summary" role="tabpanel" aria-labelledby="summary-tab">
+        <h3>Summary</h3>
+      </div>
+      <div class="tab-pane fade" id="keywords" role="tabpanel" aria-labelledby="keywords-tab">
+          <h3>key</h3>
+      </div>
+      <div class="tab-pane fade" id="report" role="tabpanel" aria-labelledby="report-tab">
+          <h3>Report</h3>
+      </div>
+    </div>
+
+</div>
+
+<script src="https://unpkg.com/popper.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/text_sum.js"></script>
+
+</body>
+
+</html>
