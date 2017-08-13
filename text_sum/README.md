@@ -4,7 +4,7 @@ $ pip3 install -r requirements
 $ python3 install.py
 $ sudo python3 summary.py
 ```
-Then browse to http://localhost
+Then browse to http://localhost:81
 
 ## Python Dependencies
 * nltk

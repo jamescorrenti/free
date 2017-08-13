@@ -36,7 +36,7 @@ class Preparsing(object):
 
     def to_json(self):
         return {
-            # 'all_sentences': self.all_sentences,
+            'all_sentences': self.all_sentences,
             'sentences': self.sentences,
             'total_word': self.total_words,
             'total_nouns': self.total_nouns,
@@ -184,15 +184,12 @@ class Preparsing(object):
         blob = self.file.read()
         self.all_sentences = nltk.sent_tokenize(blob.replace('\n', ' '))
         for all_sentence in self.all_sentences:
-            if not all_sentence:
-                continue
             tokens = self.tokenize(all_sentence)
             # self.all_sentences.append(tokens)
             # self.add_freq(tokens)
             short_tokens = self.remove_small(tokens)
             noun = self.nouns(short_tokens)
-            if not noun:
-                continue
+
             self.sentences.append(noun)
             self.total_words += 1
 
